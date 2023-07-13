@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+class worker{
+    constructor(id,name,age,mobile ){
+         this.id=id;
+         this.name=name;
+         this.age=age;
+         this.mobile=mobile;
+    }
+         work(){
+            console.log("yes " + this.name + " can work");
+         }
+         type(){
+            console.log("yes " + this.name + " can type");
+         }
+        }
+            
+        class srinu extends worker{
+           constructor(id,name,age,mobile,disability,typeOfDisability)
+           {
+            super(id,name,age,mobile)
+              this.disability=disability;
+              this.typeOfDisability=typeOfDisability;
+           }
+           fat(){
+           console.log("yes " + this.name +" full of fat");
+           }
+
+        }
+        let srinu1 = new srinu(231,"balu",18,6302720249,"no","no disability")
+            srinu1.fat();
+         console.log(srinu1)
+let worker1= new worker(123,"srinu",23,6302720249);
+console.log(worker1.work());
+console.log(worker1);
+</script>
+</html>

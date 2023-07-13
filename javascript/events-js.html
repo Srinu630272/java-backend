@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onblur/onfocus events</title>
+   
+   
+</head>
+<body>
+ Onblur event: <input myFunction() id="hi"  type="text" placeholder="fullname"><br><br>
+ onfocus event:<input myfunction2()  id="hello" placeholder="name"  type="text">
+  <script>
+    let a=document.getElementById("hi");
+    a.onblur=function myFunction(){
+       a.style="color:red; background-color:blue;"
+       alert("if you lost the focus the color will be changed");
+    }
+    let b=document.getElementById("hello");
+    b.onfocus=function myFunction2(){
+        b.style="background-color:yellow; color:brown; "
+    }
+
+  </script>
+</body>
+</html>
